@@ -51,7 +51,7 @@ const handleChat = () => {
 sendChatBtn.addEventListener("click", handleChat);
 
 const generateResponse = (incomingChatLI) => {
-    const API_URL = "";
+    const API_URL = "https://us-central1-lunar-mission-388518.cloudfunctions.net/llm";
     const messageElement = incomingChatLI.querySelector("p");
     const requestOptions = {
         method: "POST",
